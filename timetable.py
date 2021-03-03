@@ -26,8 +26,8 @@ class Get_timetable():
             'DNT':
             '1',
             'Host':
-            'jxw.sylu.edu.cn',
-            'Origin': 'http://jxw.sylu.edu.cn',
+            self.url_head[7:22],
+            'Origin': self.url_head[0:22],
             'Referer':
             self.url_head + 'xs_main.aspx?xh=' + self.xh,
             'Upgrade-Insecure-Requests':

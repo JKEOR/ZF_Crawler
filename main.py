@@ -72,7 +72,6 @@ def main():
 
         elif ch == '4':
             print("4-一键抢课")
-            print("待写")
             pass
 
         elif ch == 'q':
