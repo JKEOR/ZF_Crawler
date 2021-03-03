@@ -10,7 +10,7 @@ class Gpa():
         b = 0
         d = 0
         for grade in self.grades:
-            if grade['学年'] == self.year and grade['课程性质'] != '公共选修课':
+            if (grade['学年'] == self.year) and (grade['课程性质'] != '公共选修课'):
                 a = float(grade['学分']) * float(grade['绩点'])
                 b = b + a
 
@@ -24,7 +24,7 @@ class Gpa():
         k = 0
         n = 0
         for grade in self.grades:
-            if grade['学年'] == self.year and '选修课' not in grade['课程性质']:
+            if (grade['学年'] == self.year) and ('选修' not in grade['课程性质']):
                 j = float(grade['学分']) * float(grade['绩点'])
                 k = j + k
 
